@@ -19,8 +19,10 @@ import requests
 
 import hashlib
 
+#API GEMINI
+API_KEY = os.getenv("GOOGLE_GEMINI_API_KEY", "AIzaSyBzRcmHm9YHa9U90e2-K25sVCpVyGsF4Z4")
 
-
+MODEL = "gemini-1.5-flash"  # ou "gemini-1.5-pro"
 
 # Configuration SMTP (change pour ton email)
 SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
